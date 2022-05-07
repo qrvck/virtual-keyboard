@@ -1,10 +1,19 @@
 body {
+  margin: 0;
+  min-width: 800px;
+  padding-top: 50px;
+  height: 100vh;
+  box-sizing: border-box;
+
   font-family: Tahoma, Verdana, Segoe, sans-serif;
+  background-image: url("../img/1638236757-1001.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .output {
   display: block;
-  margin: 50px auto;
+  margin: 0 auto 50px;
   width: 684px;
   height: 267px;
 }
