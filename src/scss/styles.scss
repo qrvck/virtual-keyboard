@@ -1,0 +1,111 @@
+body {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.output {
+  display: block;
+  margin: 50px auto;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+
+  width: 793px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 6px;
+
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: lightslategrey;
+  color: whitesmoke;
+}
+
+.row {
+  display: flex;
+  column-gap: 6px;
+}
+
+.key,
+.func-key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  
+  border-radius: 5px;
+}
+
+.key {
+  background-color: #444444;
+}
+
+.func-key {
+  background-color: #272525;
+
+  &--backspace,
+  &--capslk,
+  &--l-shift {
+    width: 112px;
+  }
+
+  &--tab {
+    width: 56px;
+  }
+
+  &--del {
+    width: 50px;
+  }
+
+  &--enter,
+  &--r-shift {
+    width: 95px;
+  }
+
+  &--space {
+    width: 367px;
+  }
+}
+
+
+//! style for add/remove by js
+
+//* change language
+
+.russian .en {
+  display: none;
+}
+
+.english .ru {
+  display: none;
+}
+
+//* visible only lowercase
+
+.capslk,
+.shift {
+  display: none;
+}
+
+//* turn on/off capslock
+
+.on-capslock .lowercase {
+  display: none;
+}
+
+.on-capslock .capslk {
+  display: inline-block;
+}
+
+//* turn on/off shift
+
+.on-shift .lowercase {
+  display: none;
+}
+
+.on-shift .capslk {
+  display: inline-block;
+}
