@@ -5,6 +5,8 @@ body {
 .output {
   display: block;
   margin: 50px auto;
+  width: 684px;
+  height: 267px;
 }
 
 .keyboard {
@@ -58,8 +60,8 @@ body {
   background-color: #272525;
 
   &--backspace,
-  &--capslk,
-  &--l-shift {
+  &--capslock,
+  &--shiftleft {
     width: 112px;
   }
 
@@ -67,17 +69,18 @@ body {
     width: 56px;
   }
 
-  &--del {
+  &--numpaddecimal{
     width: 50px;
   }
 
   &--enter,
-  &--r-shift {
+  &--shiftright {
     width: 95px;
   }
 
   &--space {
     width: 367px;
+    background-color: #444444;
   }
 }
 
