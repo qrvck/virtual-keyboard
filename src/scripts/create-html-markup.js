@@ -94,7 +94,7 @@ function createKeyboard(dataOfBtns) {
 
 function createInfo() {
   let wrapper = document.createElement("div");
-  let text = [["клавиатура создана в операционной системе Windows"], ["для переключения языка нажмите левыe shift + alt"]];
+  let text = [["клавиатура создана в операционной системе Windows"], ["для переключения языка нажмите левыe ctrl + alt"]];
 
   wrapper.classList.add("info-wrapper");
 
