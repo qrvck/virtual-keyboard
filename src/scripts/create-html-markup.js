@@ -68,7 +68,12 @@ function createBtn(btn) {
 function createKeyboard(dataOfBtns) {
   let keyboard = document.createElement("div");
   keyboard.classList.add("keyboard");
-  keyboard.classList.add("russian");
+
+  if (!localStorage.getItem("lang")) {
+    keyboard.classList.add("russian");
+  } else {
+    keyboard.classList.add(`${localStorage.getItem("lang")}`);
+  }
 
 
   let rows = createRows(dataOfBtns.length);
