@@ -1,3 +1,5 @@
+import {onDownChangeLang, onUpChangeLang} from "./switch-language";
+
 let keyboard = document.querySelector(".keyboard");
 
 
@@ -13,7 +15,15 @@ document.addEventListener("keydown", (evt) => {
 
   // let innerText = key.innerText;
   // console.log(innerText);
+
+
+  onDownChangeLang(keyCode, keyboard);
 });
+
+
+
+
+
 
 
 document.addEventListener("keyup", (evt) => {
@@ -21,6 +31,9 @@ document.addEventListener("keyup", (evt) => {
   if (keyCode === "CapsLock") return;
   let key = keyboard.querySelector(`#${keyCode}`);
   key.classList.remove("active");
+
+
+  onUpChangeLang(keyCode);
 });
 
 

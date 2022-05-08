@@ -86,7 +86,27 @@ function createKeyboard(dataOfBtns) {
   return keyboard;
 }
 
+
+function createInfo() {
+  let wrapper = document.createElement("div");
+  let text = [["клавиатура создана в операционной системе Windows"], ["для переключения языка нажмите левыe shift + alt"]];
+
+  wrapper.classList.add("info-wrapper");
+
+  for (let i = 0; i < text.length; i++) {
+    let p = document.createElement("p");
+    p.classList.add("info-text");
+    p.innerHTML = text[i];
+    wrapper.append(p);
+  }
+
+  return wrapper;
+}
+
+ 
 let textarea = createTextarea();
 let keyboard = createKeyboard(dataOfBtns);
+let info = createInfo();
 body.append(textarea);
 body.append(keyboard);
+body.append(info);
