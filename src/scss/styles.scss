@@ -78,7 +78,7 @@ body {
     width: 56px;
   }
 
-  &--numpaddecimal{
+  &--delete{
     width: 50px;
   }
 
@@ -91,6 +91,11 @@ body {
     width: 367px;
     background-color: #444444;
   }
+}
+
+.active {
+  background-color: rgba(247, 104, 70, 1);
+  color: rgba(245, 245, 245, 0.4);
 }
 
 
