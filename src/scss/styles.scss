@@ -125,7 +125,8 @@ body {
 //* visible only lowercase
 
 .capslk,
-.shift {
+.shift,
+.caps-shift {
   display: none;
 }
 
@@ -146,5 +147,39 @@ body {
 }
 
 .on-shift .shift {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+// .on-capsLk-shift .capslk {
+//   display: none;
+// }
+
+// .on-capsLk-shift .shift {
+//   display: none;
+// }
+
+// .on-capsLk-shift .caps-shift {
+//   display: inline-block;
+// }
+
+
+
+//* pressed shift and capslk
+
+.on-capslock.on-shift .capslk {
+  display: none;
+}
+
+.on-capslock.on-shift .shift {
+  display: none;
+}
+
+.on-capslock.on-shift .caps-shift {
   display: inline-block;
 }

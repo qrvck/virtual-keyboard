@@ -1,9 +1,5 @@
+//changes the backlight of the keys when pressed and adds/removes classes for changing the language / changing the case when pressing shift, control, shift + control
 function addBacklight(keyCode, key, keyboard) {
-  if (keyboard.classList.contains("on-capslock") && (keyCode === "ShiftLeft" || keyCode === "ShiftRight")) {
-    return;
-  } else if (keyboard.classList.contains("on-shift") && keyCode === "CapsLock") {
-    return;
-  }
 
   if (keyCode === "CapsLock") {
     key.classList.toggle("active");
@@ -14,13 +10,17 @@ function addBacklight(keyCode, key, keyboard) {
   } else {
     key.classList.add("active");
   }
+
 }
 
+//changes the backlight of the keys when pressed and adds/removes classes for changing the language / changing the case when pressing shift, control, shift + control
 function removeBacklight(keyCode, keyboard) {
-  if (keyCode === "CapsLock") return;
+
   if (keyCode === "ShiftLeft" || keyCode === "ShiftRight") keyboard.classList.remove("on-shift");
+
+  if (keyCode === "CapsLock") return;
   let key = keyboard.querySelector(`#${keyCode}`);
   key.classList.remove("active");
 }
 
-export {addBacklight, removeBacklight};
+export { addBacklight, removeBacklight };
