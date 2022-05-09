@@ -23,6 +23,10 @@ body {
   height: 267px;
 
   background-color: #fafbfd;
+  outline: transparent;
+  border: 3px solid #aeb1fe;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .keyboard {
@@ -57,7 +61,7 @@ body {
   cursor: pointer;
   transition: all 0.3s;
   // user-select: none;
-  
+
   &:hover {
     background-color: rgba(247, 104, 70, 0.6);
   }
