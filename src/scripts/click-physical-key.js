@@ -1,7 +1,9 @@
-import {addBacklight, removeBacklight} from "./add-backlight-key";
+import { addBacklight, removeBacklight } from "./add-backlight-key";
 import { onDownChangeLang, onUpChangeLang } from "./switch-language";
+import {outputKey} from "./output-key";
 
 let keyboard = document.querySelector(".keyboard");
+let output = document.querySelector(".output");
 
 
 document.addEventListener("keydown", (evt) => {
@@ -11,6 +13,7 @@ document.addEventListener("keydown", (evt) => {
 
   addBacklight(keyCode, key, keyboard);
   onDownChangeLang(keyCode, keyboard);
+  outputKey(key, output);
 });
 
 document.addEventListener("keyup", (evt) => {

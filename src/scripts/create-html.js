@@ -55,6 +55,7 @@ function createBtn(btn) {
       key.append(div);
     }
   } else {
+    key.classList.add("key");
     key.classList.add("func-key");
     key.classList.add(`func-key--${id.toLowerCase()}`);
     key.id = id;
