@@ -7,12 +7,16 @@ let output = document.querySelector(".output");
 keyboard.addEventListener("mousedown", (evt) => {
   let key = evt.target.closest(".key");
 
-  outputKey(key, output);
-  addBacklight(key.id, key, keyboard);
+  if (key) {
+    outputKey(key, output);
+    addBacklight(key.id, key, keyboard);
+  }
 });
 
 keyboard.addEventListener("mouseup", (evt) => {
   let key = evt.target.closest(".key");
 
-  removeBacklight(key.id, keyboard);
+  if (key) {
+    removeBacklight(key.id, keyboard);
+  }
 });
