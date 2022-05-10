@@ -60,7 +60,6 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s;
-  // user-select: none;
 
   &:hover {
     background-color: rgba(247, 104, 70, 0.6);
@@ -153,26 +152,6 @@ body {
 .on-shift .shift {
   display: inline-block;
 }
-
-
-
-
-
-
-
-// .on-capsLk-shift .capslk {
-//   display: none;
-// }
-
-// .on-capsLk-shift .shift {
-//   display: none;
-// }
-
-// .on-capsLk-shift .caps-shift {
-//   display: inline-block;
-// }
-
-
 
 //* pressed shift and capslk
 
