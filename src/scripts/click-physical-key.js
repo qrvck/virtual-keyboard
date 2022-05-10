@@ -1,4 +1,4 @@
-import { addBacklight, removeBacklight } from "./add-backlight-key";
+import { addBacklight, removeBacklight } from "./add-classes";
 import { onDownChangeLang, onUpChangeLang } from "./switch-language";
 import {outputKey} from "./output-key";
 

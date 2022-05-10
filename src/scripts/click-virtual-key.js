@@ -1,5 +1,5 @@
 import {outputKey} from "./output-key";
-import { addBacklight, removeBacklight } from "./add-backlight-key";
+import { addBacklight, removeBacklight } from "./add-classes";
 
 let keyboard = document.querySelector(".keyboard");
 let output = document.querySelector(".output");
